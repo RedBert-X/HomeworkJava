@@ -1,7 +1,6 @@
 package com.aca;
 
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -49,16 +48,6 @@ public class Main {
         String str = (isOdd ? "Odd" :"Not odd");
         System.out.println(str);
  */
-
-
-
-
-
-
-
-
-
-
 
     }
 }
