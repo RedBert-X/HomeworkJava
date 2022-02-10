@@ -2,7 +2,6 @@ package com.aca.Day5;
 
 
 public class Employee {
-    // fields id, name, department, age, gender
     int id;
     String name;
     String department;
@@ -23,6 +22,7 @@ public class Employee {
         System.out.println("department: " + department);
         System.out.println("age: " + age);
         System.out.println("gender: " + gender);
-
     }
+
+
 }
