@@ -1,11 +1,19 @@
 package com.aca.Day18;
+import java.util.Arrays;
 
 public class Store {
     private int countOfWorkers;
     private String name;
     private String phoneNumber;
-    private String[] products;
+    private int[] products;
 
+
+    public Store() {
+        this.countOfWorkers = countOfWorkers;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.products = products;
+    }
 
     public int getCountOfWorkers() {
         return countOfWorkers;
@@ -23,7 +31,7 @@ public class Store {
         this.name = name;
     }
 
-    public String getPhoneNumber() {
+    String getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -31,36 +39,16 @@ public class Store {
         this.phoneNumber = phoneNumber;
     }
 
-    public String[] getProducts() {
+    public int[] getProducts() {
         return products;
     }
 
-    public void setProducts(String[] products) {
+    public void setProducts(int[] products) {
         this.products = products;
     }
 
-    public void printStore() {
-
-        if (countOfWorkers < 3 || countOfWorkers > 50) {
-            System.out.println("Incorrect count of workers");
-        } else {
-            System.out.println("Count of workers: " + countOfWorkers);
-        }
-
-
-
-        if (name.length() < 3) {
-            System.out.println("Incorrect name");
-        } else {
-            System.out.println("Name: " + name);
-        }
-
-
-        if (phoneNumber.length() < 8 && Integer.parseInt(phoneNumber) < 0) {
-            System.out.println("Incorrect phone number");
-        } else {
-            System.out.println("Phone number: " + phoneNumber);
-        }
-        System.out.println("Products: Smartphones");
+    public String printStore() {
+        return ("Name: " + getName() + "\nCount of workers: " + getCountOfWorkers() + "\nPhone number: " +
+                getPhoneNumber() + "\nProducts: " + Arrays.toString(getProducts()));
     }
 }

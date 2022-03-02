@@ -1,13 +1,24 @@
 package com.aca.Day18;
 
-public class Person {
+import com.aca.Day18.Validator.PersonValidator;
+
+public class Person extends PersonValidator {
+    private int age;
     private String firstName;
     private String lastName;
     private String passportId;
-    private int age;
     private String gender;
     private String nationality;
 
+
+    public Person() {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.passportId = passportId;
+        this.age = age;
+        this.gender = gender;
+        this.nationality = nationality;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -15,6 +26,7 @@ public class Person {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+
     }
 
     public String getLastName() {
@@ -57,41 +69,8 @@ public class Person {
         this.nationality = nationality;
     }
 
-    public void printPerson() {
-        if (firstName.length() < 3 || firstName.length() > 15) {
-            System.out.println("Incorrect name");
-        } else {
-            System.out.println("First Name: " + firstName);
-        }
-
-        if (lastName.length() < 6 || lastName.length() > 20) {
-            System.out.println("Incorrect name");
-        } else {
-            System.out.println("Last Name: " + lastName);
-        }
-
-
-        if (!(passportId.substring(0, 2).toUpperCase().matches("AN"))) {
-            System.out.println("Invalid passport ID");
-        } else  {
-            System.out.println("Passport ID: " + passportId);
-        }
-
-
-        if (age < 18 || age > 99) {
-            System.out.println("Age out of range");
-        }else {
-            System.out.println("Age: " + age);
-        }
-
-
-        if (!(gender.equals("Male") || gender.equals("Female"))) {
-            System.out.println("Incorrect gender");
-        } else {
-            System.out.println("Gender: " + gender);
-        }
-
-
-        System.out.println("Nationality: " + nationality);
+    public String printPerson() {
+        return "Name: " + getFirstName() + "\nLast name: " + getLastName() + "\nPassport ID: " + getPassportId()
+                + "\nAge: " + getAge() + "\nGender: " + getGender() + "\nNationality: " + getNationality();
     }
 }
