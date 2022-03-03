@@ -1,8 +1,8 @@
 package com.aca.Day19.Task3;
 
 public class ITCompany {
-    private int countOfEmployees;
-    private String departmentName;
+    protected int countOfEmployees;
+    protected String departmentName;
 
 
     public ITCompany(int countOfEmployees, String departmentName) {

@@ -1,8 +1,8 @@
 package com.aca.Day19.Task3;
 
 public class Accounting extends ITCompany {
-    private int countOfEmployees;
-    private String departmentName;
+    protected int countOfEmployees;
+    protected String departmentName;
 
     public Accounting(int countOfEmployees, String departmentName) {
         super(countOfEmployees, departmentName);

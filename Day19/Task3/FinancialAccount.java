@@ -1,7 +1,7 @@
 package com.aca.Day19.Task3;
 
 public class FinancialAccount extends Accounting{
-    private int salaryOfEmployees;
+    protected int salaryOfEmployees;
 
     public FinancialAccount(int countOfEmployees, String departmentName) {
         super(countOfEmployees, departmentName);

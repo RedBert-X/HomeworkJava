@@ -4,7 +4,7 @@ import static com.aca.Day18.Validator.TriangleValidator.*;
 
 public class Main {
     public static void main(String[] args) {
-        //personMain();
+        personMain();
         //triangleMain();
         //StoreMain();
     }
@@ -19,6 +19,7 @@ public class Main {
         person.setNationality("Armenian");
         System.out.println(person.printPerson());
     }
+
 
     public static void triangleMain() {
         Triangle triangle = new Triangle(3, 4, 5);

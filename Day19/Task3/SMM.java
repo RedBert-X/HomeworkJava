@@ -1,7 +1,7 @@
 package com.aca.Day19.Task3;
 
 public class SMM extends Marketing{
-        private String smm;
+        protected String smm;
 
     public SMM(int countOfEmployees, String departmentName) {
         super(countOfEmployees, departmentName);

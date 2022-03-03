@@ -1,7 +1,7 @@
 package com.aca.Day19.Task3;
 
 public class Marketing extends ITCompany {
-    private String marketing;
+    protected String marketing;
 
     public Marketing(int countOfEmployees, String departmentName) {
         super(countOfEmployees, departmentName);

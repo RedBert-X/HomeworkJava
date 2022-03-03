@@ -1,7 +1,7 @@
 package com.aca.Day19.Task3;
 
 public class TaxAccounting extends Accounting{
-    private int taxValue;
+    protected int taxValue;
 
     public TaxAccounting(int countOfEmployees, String departmentName) {
         super(countOfEmployees, departmentName);

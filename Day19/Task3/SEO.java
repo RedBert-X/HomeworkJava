@@ -1,7 +1,7 @@
 package com.aca.Day19.Task3;
 
 public class SEO extends Marketing{
-    private String ceo;
+    protected String ceo;
 
     public SEO(int countOfEmployees, String departmentName) {
         super(countOfEmployees, departmentName);
