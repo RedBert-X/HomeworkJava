@@ -10,12 +10,15 @@ public class Person extends PersonValidator {
     private String gender;
     private String nationality;
 
+    public Person(){
 
-    public Person() {
+    }
+    public Person(int age, String firstName,String lastName,String passportId,String
+            gender,String nationality) {
+        this.age = age;
         this.firstName = firstName;
         this.lastName = lastName;
         this.passportId = passportId;
-        this.age = age;
         this.gender = gender;
         this.nationality = nationality;
     }
